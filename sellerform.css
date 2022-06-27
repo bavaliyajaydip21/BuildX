@@ -1,0 +1,92 @@
+
+
+/* imgs */
+
+.img1{
+    height: 50px;
+    width: 150px;
+}
+/* heder  */
+
+#hed{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 3vh;
+    color: steelblue;
+    position: relative;
+    top: -150px;
+    transition: all,1s;
+
+}
+
+/* main form  */
+
+#mainform{
+    background-color: lightsteelblue;
+    margin-top: 4vh;
+    border-radius: 40px;
+    transition: all , 0.6s;
+}
+
+#mainform:hover{
+    box-shadow: -5px -5px 10px rgb(234, 234, 234) , 5px 5px 10px darkgray;
+}
+
+.d{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cinfo{
+    margin-top: 3vh;
+}
+
+.cname{
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 500;
+    width: 90%;
+    transition: all, 0.6s;
+
+}
+
+.cname:hover{
+    box-shadow: -3px -3px 8px rgb(234, 234, 234) , 3px 3px 8px darkgray;
+}
+
+
+/* hr */
+
+hr{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+/* error */
+
+.e{
+    color: red;
+    font-weight: 300;
+}
+
+/* submit */
+
+#sub{
+    background-color: steelblue;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* after registration */
+
+

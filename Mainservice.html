@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- icon cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="mainservice.css">
+    
+    <title>BuildX</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-2">
+                <img src="imgs/cover.png" alt="" class="img1">
+            </div>
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            
+            <div class="col-11 col-xl-8" id="headdiv">
+    
+                <form class="row" onsubmit=" redirect()">
+                    
+                    <div class="col-10 col-lg-4">
+                        <label for="ss" class="l1">Select service/material</label><br>
+                        <select name="" id="ss" required>
+                            <option value="select">Select</option>
+                            <optgroup label="Raw material">
+                                <option value="bricks">Bricks</option>
+                                <option value="cement">Cement</option>
+                                <option value="iron">Iron-rods</option>
+                            </optgroup>
+                            <optgroup label="Services">
+                                <option value="crane">Crane</option>
+                                <option value="labour">Labour</option>
+                                <option value="loader">Loader</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="col-5 col-lg-2 offset-lg-1" id="sortdiv">
+                        <label for="sort" class="l1">Short by</label><br>
+                        <select name="" id="sort" required>
+                            <option value="price">Price</option>
+                            <option value="quality">Quality</option>
+                        </select>
+                    </div>
+
+                    <div class="col-5 col-lg-2 offset-2" id="subdiv">
+                        <input type="submit" value="Show" id="sub">
+                    </div>
+
+                </form>
+                         
+            </div>
+
+        </div>
+
+
+
+        <div id="componetmaindiv">
+
+            <!-- <div class="row d-flex justify-content-center">
+
+                <div class="col-11 col-xl-8" >
+
+                    <div class="row maincomponetdiv">
+
+                        <div class="col-6 col-lg-6">
+                            
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="firmname"><i class="bi bi-caret-right-fill"></i> RK Bricks Pvt.Ltd</p>
+                                </div>
+                                <div class="col-11 offset-1 col-lg-6 offset-lg-0 " >
+                                    <p class="contactdiv">+91 9824660179 &nbsp; <i class="bi bi-telephone-outbound-fill contacticon" ></i></p>
+                                </div>
+                                <div class="col-11 offset-1 col-lg-6 offset-lg-0">
+                                    <p class="contactdiv">jaydipbavaliya.... &nbsp; <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLPhjFdPFbQSqhlprGvGClgcVwrTGCjsJbKwppwVZQsWwcQDZSrJRHXVCdtqVmNhwnQGbf"><i class="bi bi-envelope-plus-fill contacticon" ></i></a></p>
+                                </div>
+                            </div>
+
+                        </div> 
+        
+                        <div class="col-4 col-lg-3 offset-lg-1" >
+
+                            <div class="row">
+
+                                <div class="col-6 pricediv">
+                                    <p class="price">&#8377; 8<span class="unit">/piece</span></p>
+                                </div>
+
+                                <div class="col-6 ratingdiv">
+                                    <div class="rating">4.7<i class="bi bi-star-fill star" ></i></div><span class="number"> (297 reviews)</span>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-end">
+                                        <div class="col-12 col-lg-10 profilediv">
+                                            <a href="profile" class="profile">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-2 col-lg-2 ">
+                            <img src="imgs/profile.jpg" alt="" class="rightimg">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- second -->
+
+            <!-- <div class="row d-flex justify-content-center">
+
+                <div class="col-11 col-xl-8" >
+
+                    <div class="row maincomponetdiv">
+
+                        <div class="col-6 col-lg-6">
+                            
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="firmname"><i class="bi bi-caret-right-fill"></i> RK Bricks Pvt.Ltd</p>
+                                </div>
+                                <div class="col-11 offset-1 col-lg-6 offset-lg-0 " >
+                                    <p class="contactdiv">+91 9824660179 &nbsp; <i class="bi bi-telephone-outbound-fill contacticon" ></i></p>
+                                </div>
+                                <div class="col-11 offset-1 col-lg-6 offset-lg-0">
+                                    <p class="contactdiv">jaydipbavaliya.... &nbsp; <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLPhjFdPFbQSqhlprGvGClgcVwrTGCjsJbKwppwVZQsWwcQDZSrJRHXVCdtqVmNhwnQGbf"><i class="bi bi-envelope-plus-fill contacticon" ></i></a></p>
+                                </div>
+                            </div>
+
+                        </div> 
+        
+                        <div class="col-4 col-lg-3 offset-lg-1" >
+
+                            <div class="row">
+
+                                <div class="col-6 pricediv">
+                                    <p class="price">&#8377; 8<span class="unit">/piece</span></p>
+                                </div>
+
+                                <div class="col-6 ratingdiv">
+                                    <div class="rating">4.7<i class="bi bi-star-fill star" ></i></div><span class="number"> (297 reviews)</span>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-end">
+                                        <div class="col-12 col-lg-10 profilediv">
+                                            <a href="profile" class="profile">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-2 col-lg-2 ">
+                            <img src="imgs/profile.jpg" alt="" class="rightimg">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </div>
+
+    </div>
+
+
+
+
+
+    
+    <!-- custom js  -->
+    <script src="mainservice.js"></script>
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>

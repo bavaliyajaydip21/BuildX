@@ -1,0 +1,16 @@
+#imgwraper img{
+    height: 25rem;
+    width:25rem;
+    border-radius: 50%;
+
+}
+
+#aboutwraper{
+    margin-top: 9.5rem;
+}
+
+#contentwraper{
+    position: relative;
+    left :-1500px;
+    transition: all 1s;
+}

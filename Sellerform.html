@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- icon cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="sellerform.css">
+
+    <title>BuildX</title>
+</head>
+<body>
+ 
+
+
+    
+    <div class="container" id="v1">
+
+        
+
+        <div class="row">
+            <div class="col-2">
+                <img src="imgs/cover.png" alt="" class="img1">
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 col-md-6" id="hed">
+
+                <h1>Service Registration</i></h1>
+
+            </div>
+        </div>
+
+        <form  class="row d-flex justify-content-center" onsubmit="return checked()" id="mainformdiv" >
+
+            <div class="col-10 col-lg-7" id="mainform">
+
+                <div class="row d-flex justify-content-center cinfo" >
+
+                    <div class="col-10 col-lg-6 d">
+                        <label for="f1">Firm Name</label><br>
+                        <input type="text" name="firmname" class="cname" placeholder="Firm name" id="f1" required>
+                        <p id="E1" class="e">&nbsp;</p>
+                    </div>
+
+                    <div class="col-10 col-lg-6 d">
+                        <label for="f2">Service or material name</label><br>
+                        <input type="text" name="itemname" class="cname" placeholder="product/service name" id="f2" required>
+                        <p id="E2" class="e">&nbsp;</p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row d-flex justify-content-center cinfo" >
+
+                    <div class="col-10 col-lg-6 d">
+                        <label for="f3">Price</label><br>
+                        <input type="number" name="price" class="cname" placeholder="In Rs." id="f3" required>
+                        <p id="E3" class="e">&nbsp;</p>
+                    </div>
+
+                    <div class="col-10 col-lg-6 d">
+                        <label for="f4">Unit for price</label><br>
+                        <select type="text" name="unit" class="cname" placeholder="Unit?(ex: kg/meter/ft)" id="f4" required>
+                            <option value="kg">/kg</option>
+                            <option value="kg">/piece</option>
+                            <option value="kg">/meter</option>
+                            <option value="kg">/meterSquare</option>
+                            <option value="kg">/day</option>
+                        </select>
+                        <p id="E4" class="e">&nbsp;</p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row d-flex justify-content-center cinfo">
+
+                    <div class="col-10 col-lg-7 d">
+                        <label for="f5">Moblie number</label><br>
+                        <input type="number" pattern="[0-9]{10}" maxlength="10" name="mobile" class="cname" placeholder="Active Mobile number" id="f5" required>
+                        <p id="E5" class="e">&nbsp;</p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row d-flex justify-content-center cinfo" >
+
+                    <div class="col-12 col-lg-7 d">
+                        <label for="f6">Email</label><br>
+                        <input type="email" name="email" class="cname" placeholder="Email address" id="f6" required>
+                        <p id="E6" class="e">&nbsp;</p>
+                    </div>
+                    <div class="col-12 col-lg-7 d">
+                        <label for="f7">Confirm Your Email</label><br>
+                        <input type="email" name="confirmedmail" class="cname" placeholder="Re-enter Email address" id="f7" required>
+                        <p id="E7" class="e">&nbsp;</p>
+                    </div>
+                    <div class="col-12 col-lg-6 d">
+                        <label for="f7">Set password</label><br>
+                        <input type="password" name="password" class="cname" placeholder="set your password for login" id="f11" required>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row d-flex justify-content-center cinfo" >
+
+                    <div class="col-10 col-lg-10 d">
+                        <label for="f8">Exact address</label><br>
+                        <textarea type="text" name="addr" class="cname" placeholder="!! User may visit your site"  id="f8" required></textarea>
+                        <p id="E8" class="e">&nbsp;</p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row d-flex justify-content-center cinfo" >
+
+                    <div class="col-12 col-lg-6 d">
+                        <label for="f9">Upload Firm Images</label><br>
+                        <input type="file" multiple name="img1" class="cname" id="f9" required>
+                        <p id="E9" class="e">&nbsp;</p>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d">
+                        <label for="f10">Upload Legal Documents</label><br>
+                        <input type="file" multiple name="img2" class="cname" placeholder="Unit?(ex: kg/meter/ft)" id="f10" required>
+                        <p id="E10" class="e">&nbsp;</p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row d-flex justify-content-center cinfo" >
+
+                    <div class="col-10 col-lg-5 d">
+                        
+                        <input type="submit" name="status-submited" value="Verify" class="cname" id="sub">
+                        <p id="E8" class="e">&nbsp;</p>
+                    </div>
+
+                </div>
+
+                
+                
+
+            </div>
+
+        </form>
+    </div>
+
+
+   
+
+
+
+
+
+    <!-- custom js  -->
+    <script src="sellerform.js"></script>
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
